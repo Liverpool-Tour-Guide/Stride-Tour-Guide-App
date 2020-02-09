@@ -1,4 +1,4 @@
-# Tour-Guide-App
+# Stride - Tour-Guide-App
 
 App created by a team of 6 students at The University of Liverpool, as a part of a software group project module.
 
