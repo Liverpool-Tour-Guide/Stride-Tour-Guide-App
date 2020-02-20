@@ -4,14 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="StrideApp.TourPage"
-             Title="Choose a Tour">
+             x:Class="StrideApp.Views.MapPage"
+             Title="Map">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Here will be the map"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text="Go to tour " Clicked="OnNoteAddedClicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

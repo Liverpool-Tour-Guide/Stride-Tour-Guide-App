@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StrideApp.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace StrideApp
         public TourPage()
         {
             InitializeComponent();
+        }
+        async void OnNoteAddedClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TourTabbedPage
+            {
+            });
         }
     }
 }
