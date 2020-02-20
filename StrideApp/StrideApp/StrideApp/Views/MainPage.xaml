@@ -12,6 +12,7 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <!-- Creating a button and giving it a function to call when it is clicked-->
         <Button Text="Go to tour selection" Clicked="OnNoteAddedClicked"></Button>
     </StackLayout>
 

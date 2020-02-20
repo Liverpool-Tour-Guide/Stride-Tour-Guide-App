@@ -19,7 +19,7 @@ namespace StrideApp
         }
 
         async void OnNoteAddedClicked(object sender, EventArgs e)
-        {
+        {//This is how you navigate between pages
             await Navigation.PushAsync(new TourPage
             {
             });
