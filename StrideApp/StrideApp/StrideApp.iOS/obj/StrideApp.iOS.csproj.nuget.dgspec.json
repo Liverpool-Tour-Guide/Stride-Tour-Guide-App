@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {}
+    "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {
+    "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
         "projectName": "StrideApp.iOS",
-        "projectPath": "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
-        "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
+        "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+        "packagesPath": "C:\\Users\\beanb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\beanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
-                "projectPath": "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
+              "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
+                "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
               }
             }
           }
@@ -42,6 +42,14 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[3.0.0.12, )"
+            },
+            "Xam.Plugin.Geolocator": {
+              "target": "Package",
+              "version": "[4.5.0.6, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
@@ -65,21 +73,20 @@
         }
       }
     },
-    "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
+    "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+        "projectUniqueName": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
         "projectName": "StrideApp",
-        "projectPath": "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
-        "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mike\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
+        "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+        "packagesPath": "C:\\Users\\beanb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\beanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -110,6 +117,14 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[3.0.0.12, )"
+            },
+            "Xam.Plugin.Geolocator": {
+              "target": "Package",
+              "version": "[4.5.0.6, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
@@ -120,10 +135,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

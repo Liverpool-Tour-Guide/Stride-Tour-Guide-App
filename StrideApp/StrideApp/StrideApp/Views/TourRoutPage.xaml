@@ -6,9 +6,10 @@
              mc:Ignorable="d"
              x:Class="StrideApp.Views.TourRoutPage"
              Title="Route">
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Here will be the locations"
+            <Label x:Name="Labels" Text="Here will be the locations"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

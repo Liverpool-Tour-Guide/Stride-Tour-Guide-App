@@ -4,11 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
             xmlns:local="clr-namespace:StrideApp.Views"
+            xmlns:local1="clr-namespace:StrideApp"
             mc:Ignorable="d"
             x:Class="StrideApp.Views.TourTabbedPage"
             Title="Tour Name">
-  <!--Pages can be added as references or inline-->
-    <local:MapPage  Title="Map"/>
-    <local:TourRoutPage Title="Route"/>
+    
+    <!--Pages can be added as references or inline-->
+    <local:MapPage  Title="Map"  />
+    <local:TourRoutPage Title="Route" />
     
 </TabbedPage>
