@@ -14,7 +14,7 @@ namespace StrideApp
         public location()
         {
             getInitLocation().Wait();
-            startListening();
+            //startListening();
         }
 
         private async Task getInitLocation()

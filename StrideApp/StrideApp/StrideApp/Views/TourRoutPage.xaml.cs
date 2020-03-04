@@ -17,9 +17,9 @@ namespace StrideApp.Views
         public TourRoutPage()
         {
             InitializeComponent();
-            locator = new location();
-            position = locator.position;
-            Labels.Text = position.Latitude.ToString();
+            //locator = new location();
+            //position = locator.position;
+            //Labels.Text = position.Latitude.ToString();
         }
     }
 }
