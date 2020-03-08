@@ -12,9 +12,46 @@ namespace StrideApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TourRoutPage : ContentPage
     {
+
+        public IList<Waypoint> Waypoints { get; private set; }
+
         public TourRoutPage()
         {
             InitializeComponent();
+
+            Waypoints = new List<Waypoint>();
+
+            Waypoints.Add(new Waypoint
+            {
+                Name = "International Slavery Museum",
+                Description = "Hear the untold stories of enslaved people and learn about historical and contemporary slavery."
+            });
+
+            Waypoints.Add(new Waypoint
+            {
+                Name = "Merseyside Maritime Museum",
+                Description = "Discover Liverpool's seafaring past and find out about a life at sea."
+            });
+
+            Waypoints.Add(new Waypoint
+            {
+                Name = "Royal Albert Dock",
+                Description = "The Royal Albert Dock is a complex of dock buildings and warehouses in Liverpool, England. Designed by Jesse Hartley and Philip Hardwick, it was opened in 1846, and was the first structure in Britain to be built from cast iron, brick and stone, with no structural wood."
+            });
+
+            Waypoints.Add(new Waypoint
+            {
+                Name = "Tate Liverpool",
+                Description = "Liverpool's Museum of Modern Art"
+            });
+
+            Waypoints.Add(new Waypoint
+            {
+                Name = "The Beatles Story",
+                Description = "Experience the Beatles from their childhood to their stardom."
+            });
+
+
         }
     }
 }

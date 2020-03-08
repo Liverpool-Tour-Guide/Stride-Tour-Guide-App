@@ -7,10 +7,39 @@
              x:Class="StrideApp.Views.TourRoutPage"
              Title="Route">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Here will be the locations"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+                <Frame>
+                    <ListView Margin="10,5">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type local:Waypoint}">
+                                <local:Waypoint Name="International Slavery Museum" 
+                                                Description="Hear the untold stories of enslaved people and learn about historical and contemporary slavery." />
+                                <local:Waypoint Name="Merseyside Maritime Museum" 
+                                                Description="Discover Liverpool's seafaring past and find out about a life at sea." />
+                                <local:Waypoint Name="Royal Albert Dock" 
+                                                Description="The Royal Albert Dock is a complex of dock buildings and warehouses in Liverpool, England. Designed by Jesse Hartley and Philip Hardwick, it was opened in 1846, and was the first structure in Britain to be built from cast iron, brick and stone, with no structural wood." />
+                                <local:Waypoint Name="Tate Liverpool" 
+                                                Description="Liverpool's Museum of Modern Art" />
+                                <local:Waypoint Name="The Beatles Story" 
+                                                Description="Experience the Beatles from their childhood to their stardom." />
+                            </x:Array>
+                        </ListView.ItemsSource>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TableView Intent="Data"
+                                           Margin="10,0">
+                                    <TableRoot Title="{Binding Name}">
+                                        <TableSection Title="Description">
+                                            <TextCell Text="{Binding Description}" />
+                                        </TableSection>
+                                    </TableRoot>
+                                </TableView>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
