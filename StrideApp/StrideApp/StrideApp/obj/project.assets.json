@@ -574,11 +574,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+      "projectUniqueName": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
       "projectName": "StrideApp",
-      "projectPath": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+      "projectPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
       "packagesPath": "C:\\Users\\Jakob Ropers\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
+      "outputPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

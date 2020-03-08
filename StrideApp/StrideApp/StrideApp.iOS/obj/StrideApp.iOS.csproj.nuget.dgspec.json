@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {}
+    "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {
+    "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+        "projectUniqueName": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
         "projectName": "StrideApp.iOS",
-        "projectPath": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+        "projectPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
         "packagesPath": "C:\\Users\\Jakob Ropers\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
+        "outputPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
-                "projectPath": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
+              "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
+                "projectPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
+    "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+        "projectUniqueName": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
         "projectName": "StrideApp",
-        "projectPath": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+        "projectPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
         "packagesPath": "C:\\Users\\Jakob Ropers\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jakob Ropers\\source\\repos\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
+        "outputPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
