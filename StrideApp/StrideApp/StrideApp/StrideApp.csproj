@@ -11,8 +11,54 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="POPULATED_DATA_STRIDE\AlbertDock.txt" />
+    <None Remove="POPULATED_DATA_STRIDE\AlbertDocks.jfif" />
+    <None Remove="POPULATED_DATA_STRIDE\Beatles.jpg" />
+    <None Remove="POPULATED_DATA_STRIDE\BeatlesStory.mp3" />
+    <None Remove="POPULATED_DATA_STRIDE\BeatlesStory.txt" />
+    <None Remove="POPULATED_DATA_STRIDE\City.txt" />
+    <None Remove="POPULATED_DATA_STRIDE\InternationalSlaveryMuseum.mp3" />
+    <None Remove="POPULATED_DATA_STRIDE\InternationalSlaveryMuseum.txt" />
+    <None Remove="POPULATED_DATA_STRIDE\Landmark.txt" />
+    <None Remove="POPULATED_DATA_STRIDE\Liverpool.jpg" />
+    <None Remove="POPULATED_DATA_STRIDE\London.jpg" />
+    <None Remove="POPULATED_DATA_STRIDE\Madrid.jpg" />
+    <None Remove="POPULATED_DATA_STRIDE\MMM.mp3" />
+    <None Remove="POPULATED_DATA_STRIDE\MMM.txt" />
+    <None Remove="POPULATED_DATA_STRIDE\NewYork.jpg" />
+    <None Remove="POPULATED_DATA_STRIDE\RoyalAlbert.mp3" />
+    <None Remove="POPULATED_DATA_STRIDE\Tate.jpg" />
+    <None Remove="POPULATED_DATA_STRIDE\Tate.mp3" />
+    <None Remove="POPULATED_DATA_STRIDE\Tate.txt" />
+    <None Remove="POPULATED_DATA_STRIDE\Tour.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\AlbertDock.txt" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\AlbertDocks.jfif" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\Beatles.jpg" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\BeatlesStory.mp3" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\BeatlesStory.txt" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\City.txt" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\InternationalSlaveryMuseum.mp3" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\InternationalSlaveryMuseum.txt" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\Landmark.txt" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\Liverpool.jpg" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\London.jpg" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\Madrid.jpg" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\MMM.mp3" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\MMM.txt" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\NewYork.jpg" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\RoyalAlbert.mp3" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\Tate.jpg" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\Tate.mp3" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\Tate.txt" />
+    <EmbeddedResource Include="POPULATED_DATA_STRIDE\Tour.txt" />
   </ItemGroup>
 
   <ItemGroup>

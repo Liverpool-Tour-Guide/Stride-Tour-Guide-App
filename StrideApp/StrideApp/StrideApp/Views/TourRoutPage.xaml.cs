@@ -1,19 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Reflection;
+using System.Text.RegularExpressions;
 
 namespace StrideApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TourRoutPage : ContentPage
     {
-
+        string[,] landmark_data = new string[20,6];
         public IList<Waypoint> Waypoints { get; private set; }
+
+        public int getWaypoints(int cityID, int tourID) 
+        {
+            int rowCounter = 0;
+
+            String CityID = cityID.ToString();
+            String TourID = tourID.ToString();
+
+            var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
+            Stream stream = assembly.GetManifestResourceStream("StrideApp.POPULATED_DATA_STRIDE.Landmark.txt");
+
+            using (var reader = new StreamReader(stream))
+            {
+
+                while (!reader.EndOfStream)
+                {
+                    string line = reader.ReadLine();
+                    String[] values = Regex.Split(line,",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+
+                    string temp = values[2];
+
+                    if ((values[1] == CityID) && (temp.Contains(TourID)))
+                    {
+                        for (int i = 3; i < 9; i++)
+                        {
+                            landmark_data[rowCounter, i - 3] = values[i];
+                        }
+
+                        rowCounter++;
+                    }
+                }
+            }
+
+            return rowCounter;
+        
+        }
 
         public TourRoutPage()
         {
@@ -21,45 +57,18 @@ namespace StrideApp.Views
 
             Waypoints = new List<Waypoint>();
 
-            Waypoints.Add(new Waypoint
-            {
-                Name = "International Slavery Museum",
-                Description = "Hear the untold stories of enslaved people and learn about historical and contemporary slavery.",
-                AudioURL = "INSERT URL",
-                Visited = true
-            });
+            int counter = getWaypoints(1,3);
 
-            Waypoints.Add(new Waypoint
+            for (int i = 0; i < counter; i++)
             {
-                Name = "Merseyside Maritime Museum",
-                Description = "Discover Liverpool's seafaring past and find out about a life at sea.",
-                AudioURL = "INSERT URL",
-                Visited = true
-            });
-
-            Waypoints.Add(new Waypoint
-            {
-                Name = "Royal Albert Dock",
-                Description = "The Royal Albert Dock is a complex of dock buildings and warehouses in Liverpool, England. Designed by Jesse Hartley and Philip Hardwick, it was opened in 1846, and was the first structure in Britain to be built from cast iron, brick and stone, with no structural wood.",
-                AudioURL = "INSERT URL",
-                Visited = false
-            });
-
-            Waypoints.Add(new Waypoint
-            {
-                Name = "Tate Liverpool",
-                Description = "Liverpool's Museum of Modern Art",
-                AudioURL = "INSERT URL",
-                Visited = false
-            });
-
-            Waypoints.Add(new Waypoint
-            {
-                Name = "The Beatles Story",
-                Description = "Experience the Beatles from their childhood to their stardom.",
-                AudioURL = "INSERT URL",
-                Visited = false
-            });
+                Waypoints.Add(new Waypoint
+                {
+                    Name = landmark_data[i, 0],
+                    Description = landmark_data[i, 2],
+                    AudioURL = landmark_data[i, 3],
+                    Visited = false
+                });
+            }
 
             BindingContext = this;
 
