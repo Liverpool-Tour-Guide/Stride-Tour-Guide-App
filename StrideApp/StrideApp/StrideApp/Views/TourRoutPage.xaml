@@ -41,6 +41,14 @@
                                    VerticalOptions="End"
                                    Grid.Row="1"
                                    Grid.Column="1" />
+                            <Button x:Name="btnPlay"
+                                    ClassId="{Binding StorageIndex}"
+                                    Text="Play"
+                                    BorderColor="Green"
+                                    Grid.Column="2"
+                                    Pressed="OnPlayButtonClicked"
+                                    Released="ToggleClickedHandler"
+                                    />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

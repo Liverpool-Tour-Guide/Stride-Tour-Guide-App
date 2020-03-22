@@ -5,7 +5,9 @@ using System.Text;
 namespace StrideApp
 {
     public class Waypoint
-    {
+    {   
+        public string StorageIndex { get; set; }
+        public string LandmarkID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string AudioURL { get; set; }
