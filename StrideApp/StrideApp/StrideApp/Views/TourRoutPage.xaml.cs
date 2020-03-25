@@ -77,6 +77,9 @@ namespace StrideApp.Views
                 } else
                 {
                     currentActiveButton.Source = "play_circle.png";
+                    button.WidthRequest = 64;
+                    button.HeightRequest = 64;
+                    button.BackgroundColor = Color.Transparent;
                     currentActiveButton.Pressed += OnPlayButtonClicked;
 
                     AudioPlayer tempAudioPlayer = new AudioPlayer
@@ -123,12 +126,18 @@ namespace StrideApp.Views
             {
                 //Play Displayed
                 button.Source = "play_circle.png";
+                button.WidthRequest = 64;
+                button.HeightRequest = 64;
+                button.BackgroundColor = Color.Transparent;
                 button.Pressed += OnPlayButtonClicked;
 
             } else if (toggle == -1)
             {
                 //Pause Displayed
                 button.Source = "pause_circle.png";
+                button.WidthRequest = 64;
+                button.HeightRequest = 64;
+                button.BackgroundColor = Color.Transparent;
                 button.Pressed += OnPauseButtonClicked;
             }
         }

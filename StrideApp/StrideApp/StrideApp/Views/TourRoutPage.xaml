@@ -60,9 +60,9 @@
                                     Grid.Row="2"
                                     Pressed="OnPlayButtonClicked"
                                     Released="ToggleClickedHandler"
+                                    WidthRequest="64"
+                                    HeightRequest="64"
                                     BackgroundColor="Transparent"
-                                    WidthRequest="70"
-                                    HeightRequest="70"
                                     />
                         </Grid>
                     </ViewCell>

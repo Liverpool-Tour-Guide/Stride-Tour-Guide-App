@@ -93,15 +93,14 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pause_circle.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StrideApp\StrideApp.csproj">
       <Project>{C8A06FFD-21EF-4414-BF61-B884A996E8DE}</Project>
       <Name>StrideApp</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\pause_circle.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\play_circle.png" />
