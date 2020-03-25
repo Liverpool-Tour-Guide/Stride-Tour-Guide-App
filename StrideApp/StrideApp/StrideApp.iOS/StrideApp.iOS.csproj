@@ -135,4 +135,10 @@
       <Name>StrideApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pause_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\play_circle.png" />
+  </ItemGroup>
 </Project>

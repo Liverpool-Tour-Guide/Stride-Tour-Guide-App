@@ -11,6 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\pause_circle.png" />
+    <None Remove="Assets\play_circle.png" />
     <None Remove="POPULATED_DATA_STRIDE\AlbertDock.txt" />
     <None Remove="POPULATED_DATA_STRIDE\AlbertDocks.jfif" />
     <None Remove="POPULATED_DATA_STRIDE\Beatles.jpg" />
@@ -40,6 +42,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Assets\pause_circle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\play_circle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="POPULATED_DATA_STRIDE\AlbertDock.txt" />
     <EmbeddedResource Include="POPULATED_DATA_STRIDE\AlbertDocks.jfif" />
     <EmbeddedResource Include="POPULATED_DATA_STRIDE\Beatles.jpg" />

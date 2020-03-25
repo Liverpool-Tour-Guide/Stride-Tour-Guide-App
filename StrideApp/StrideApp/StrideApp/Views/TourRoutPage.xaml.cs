@@ -19,7 +19,7 @@ namespace StrideApp.Views
 
         AudioPlayer currentAudioPlayer;
         int toggle;
-        Button currentActiveButton;
+        ImageButton currentActiveButton;
 
         public int getWaypoints(int cityID, int tourID) 
         {
@@ -61,7 +61,7 @@ namespace StrideApp.Views
 
         async void OnPlayButtonClicked(object sender, EventArgs e)
         {//This is how you navigate between pages
-            var button = (Button)sender;
+            var button = (ImageButton)sender;
             int index = Int32.Parse(button.ClassId);
             string audioName = landmark_data[index, 4];
 
@@ -76,8 +76,7 @@ namespace StrideApp.Views
                     }
                 } else
                 {
-                    currentActiveButton.Text = "Play";
-                    currentActiveButton.BorderColor = Color.Green;
+                    currentActiveButton.Source = "play_circle.png";
                     currentActiveButton.Pressed += OnPlayButtonClicked;
 
                     AudioPlayer tempAudioPlayer = new AudioPlayer
@@ -87,7 +86,7 @@ namespace StrideApp.Views
                     currentAudioPlayer = tempAudioPlayer;
                     currentAudioPlayer.startAudio(audioName);
                     currentActiveButton = button;
-                    Waypoints[index].Visited= true;
+                    Waypoints[index].changeVisitStatus();
 
                     toggle = -1;
                 }
@@ -100,7 +99,7 @@ namespace StrideApp.Views
                 currentAudioPlayer = tempAudioPlayer;
                 currentAudioPlayer.startAudio(audioName);
                 currentActiveButton = button;
-                Waypoints[index].Visited = true;
+                Waypoints[index].changeVisitStatus();
 
                 toggle = -1;
             }
@@ -118,20 +117,18 @@ namespace StrideApp.Views
 
         async void ToggleClickedHandler(object sender, EventArgs e)
         {
-            var button = (Button)sender;
+            var button = (ImageButton)sender;
 
             if (toggle == 1)
             {
                 //Play Displayed
-                button.Text = "Play";
-                button.BorderColor = Color.Green;
+                button.Source = "play_circle.png";
                 button.Pressed += OnPlayButtonClicked;
 
             } else if (toggle == -1)
             {
                 //Pause Displayed
-                button.Text = "Pause";
-                button.BorderColor = Color.Red;
+                button.Source = "pause_circle.png";
                 button.Pressed += OnPauseButtonClicked;
             }
         }
@@ -139,10 +136,9 @@ namespace StrideApp.Views
 
         public TourRoutPage()
         {
+  
             InitializeComponent();
-
-
-            //Waypoints = new List<Waypoint>();
+            
 
             int counter = getWaypoints(1,3);
 
