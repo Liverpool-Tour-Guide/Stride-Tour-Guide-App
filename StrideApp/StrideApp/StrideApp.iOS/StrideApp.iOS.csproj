@@ -132,4 +132,10 @@
       <Name>StrideApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\drawable\collapsed_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\drawable\expanded_blue.png" />
+  </ItemGroup>
 </Project>

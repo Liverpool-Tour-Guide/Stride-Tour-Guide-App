@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {}
+    "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {
+    "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
         "projectName": "StrideApp.iOS",
-        "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
-        "packagesPath": "C:\\Users\\beanb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
+        "projectPath": "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+        "packagesPath": "C:\\Users\\Adam Babs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\beanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Adam Babs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
-                "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
+              "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
+                "projectPath": "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
+    "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+        "projectUniqueName": "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
         "projectName": "StrideApp",
-        "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
-        "packagesPath": "C:\\Users\\beanb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
+        "projectPath": "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+        "packagesPath": "C:\\Users\\Adam Babs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Adam Babs\\Desktop\\Stride\\StrideApp\\StrideApp\\StrideApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\beanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Adam Babs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
