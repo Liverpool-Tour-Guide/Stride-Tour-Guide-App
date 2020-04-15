@@ -20,6 +20,8 @@ namespace StrideApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TourRoutPage : ContentPage
     {
+        public location locator;
+        public Position position;
         string[,] landmark_data = new string[20,7];
         public IList<Waypoint> Waypoints { get; private set; } = new List<Waypoint>();
 
@@ -148,6 +150,12 @@ namespace StrideApp.Views
             }
         }
 
+        private void refreshPosition()
+        {
+            position = locator.position;
+
+        }
+
 
         public TourRoutPage()
         {
@@ -156,25 +164,14 @@ namespace StrideApp.Views
             locator = new location();
             position = locator.position;
 
-			Long.Text = position.Longitude.ToString();
-            Lat.Text = position.Latitude.ToString();
-
             // Starts a time on the main thread that calls the refresh function every 5 seconds
             Device.StartTimer(TimeSpan.FromSeconds(5), () =>
             {
                 Device.BeginInvokeOnMainThread(() => refreshPosition());
                 return true;
             });
-        }
 
-        private void refreshPosition()
-        {
-            position = locator.position;
-            Long.Text = position.Longitude.ToString();
-            Lat.Text = position.Latitude.ToString();
-            
-
-            int counter = getWaypoints(1,3);
+            int counter = getWaypoints(1, 3);
 
             for (int i = 0; i < counter; i++)
             {
@@ -190,9 +187,6 @@ namespace StrideApp.Views
             }
 
             BindingContext = this;
-            
-
-
         }
 
     }
