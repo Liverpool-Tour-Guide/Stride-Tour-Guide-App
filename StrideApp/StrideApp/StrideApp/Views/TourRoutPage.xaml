@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="StrideApp.Views.TourRoutPage"
              Title="Route">
+
     <ContentPage.Content>
         <ListView Margin="10,5"
                     ItemsSource="{Binding Waypoints}"

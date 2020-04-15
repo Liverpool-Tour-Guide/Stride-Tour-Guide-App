@@ -79,8 +79,7 @@
         "outputPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Jakob Ropers\\AppData\\Roaming\\NuGet\\NuGet.Config",
