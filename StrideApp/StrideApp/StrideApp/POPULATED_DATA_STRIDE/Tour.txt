@@ -1,0 +1,4 @@
+﻿TourID,CityID,TourName,TourDescription,TourDuration,TourDistance,Tour Image
+1,1,Museum Tour,A tour along all the museums at the historic Albert Docks.,10,50,Tate.jpg
+2,1,Beatles Tour,A tour along the Albert Dock to the beginning of the Beatles Story.,15,400,Beatles.jpg
+3,1,Full Dock Tour,A full tour along all landmarks at the beautiful Albert Docks.,25,600,AlbertDocks.jpg

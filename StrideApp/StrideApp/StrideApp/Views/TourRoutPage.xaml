@@ -8,13 +8,67 @@
              Title="Route">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="Lat" Text="Here will be the locations"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Label x:Name="Long" Text="Here will be the locations"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ListView Margin="10,5"
+                    ItemsSource="{Binding Waypoints}"
+                    HasUnevenRows="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Button BackgroundColor="{Binding MarkColor}"
+                                    HorizontalOptions="Center"
+                                    BorderWidth="1"
+                                    BorderRadius="100"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    Grid.RowSpan="3"
+                                    Grid.Row="1"
+                                    Grid.Column="0"/>
+
+                            <Label Text="{Binding Name}"
+                                   TextColor="{Binding TextColor}"
+                                   FontSize="Large"
+                                   FontAttributes="Bold"
+                                   Grid.Row="0"
+                                   Grid.RowSpan="2"
+                                   Grid.Column="1"
+                                   Grid.ColumnSpan="3"
+                                   VerticalTextAlignment="End" />
+                            <Label Text="{Binding Description}"
+                
+                                   Grid.Row="2"
+                                   Grid.RowSpan="3"
+                                   Grid.Column="1"
+                                   Grid.ColumnSpan="3"/>
+                            <ImageButton x:Name="btnPlay"
+                                    ClassId="{Binding StorageIndex}"
+                                    Source="play_circle.png"
+                                    Grid.Column="4"
+                                    Grid.Row="2"
+                                    Pressed="OnPlayButtonClicked"
+                                    Released="ToggleClickedHandler"
+                                    WidthRequest="64"
+                                    HeightRequest="64"
+                                    BackgroundColor="Transparent"
+                                    />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

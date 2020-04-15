@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {}
+    "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {
+    "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+        "projectUniqueName": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
         "projectName": "StrideApp.iOS",
-        "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
-        "packagesPath": "C:\\Users\\beanb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
+        "projectPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+        "packagesPath": "C:\\Users\\Jakob Ropers\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\beanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jakob Ropers\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
-                "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
+              "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
+                "projectPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
               }
             }
           }
@@ -42,6 +42,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Xam.Plugin.SimpleAudioPlayer": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
@@ -65,20 +69,20 @@
         }
       }
     },
-    "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
+    "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+        "projectUniqueName": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
         "projectName": "StrideApp",
-        "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
-        "packagesPath": "C:\\Users\\beanb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
+        "projectPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+        "packagesPath": "C:\\Users\\Jakob Ropers\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Liverpool-Tour-Guide\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\beanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jakob Ropers\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -109,13 +113,9 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
-            "Plugin.Permissions": {
+            "Xam.Plugin.SimpleAudioPlayer": {
               "target": "Package",
-              "version": "[3.0.0.12, )"
-            },
-            "Xam.Plugin.Geolocator": {
-              "target": "Package",
-              "version": "[4.5.0.6, )"
+              "version": "[1.4.0, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -136,7 +136,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
