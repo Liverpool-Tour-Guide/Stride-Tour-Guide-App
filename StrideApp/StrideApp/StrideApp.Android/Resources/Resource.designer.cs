@@ -15,7 +15,7 @@ namespace StrideApp.Droid
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
 		
@@ -5908,7 +5908,7 @@ namespace StrideApp.Droid
 			public const int design_password_eye = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int pause_circle = 2131165300;
+			public const int design_snackbar_background = 2131165300;
 			
 			// aapt resource value: 0x7F070075
 			public const int googleg_disabled_color_18 = 2131165301;
@@ -5971,10 +5971,16 @@ namespace StrideApp.Droid
 			public const int notify_panel_notification_icon_bg = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int tooltip_frame_dark = 2131165321;
+			public const int pause_circle = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int tooltip_frame_light = 2131165322;
+			public const int play_circle = 2131165322;
+			
+			// aapt resource value: 0x7F07008B
+			public const int tooltip_frame_dark = 2131165323;
+			
+			// aapt resource value: 0x7F07008C
+			public const int tooltip_frame_light = 2131165324;
 			
 			static Drawable()
 			{

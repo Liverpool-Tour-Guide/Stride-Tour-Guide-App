@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Forms.Maps;
 
 namespace StrideApp.Views
 {
@@ -15,6 +16,7 @@ namespace StrideApp.Views
         public MapPage()
         {
             InitializeComponent();
+
         }
     }
 }
