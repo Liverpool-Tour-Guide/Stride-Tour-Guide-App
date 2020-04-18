@@ -13,6 +13,8 @@
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <application android:label="StrideApp.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAr7piEsaG-TlTfh4G7vN2XjUaJ_g0uSU0" />
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="StrideApp" android:theme="@style/MainTheme" android:name="crc64aec1c1a9a483bb8d.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -35,5 +37,7 @@
         <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.strideapp" />
       </intent-filter>
     </receiver>
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
   </application>
 </manifest>
