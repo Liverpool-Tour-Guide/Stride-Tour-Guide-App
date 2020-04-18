@@ -15,7 +15,7 @@ namespace StrideApp.Droid
 {
 	
 	
-	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
 		
@@ -5908,7 +5908,7 @@ namespace StrideApp.Droid
 			public const int design_password_eye = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int design_snackbar_background = 2131165300;
+			public const int pause_circle = 2131165300;
 			
 			// aapt resource value: 0x7F070075
 			public const int googleg_disabled_color_18 = 2131165301;
