@@ -10,8 +10,12 @@
       "StrideApp/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
+          "Plugin.Permissions": "3.0.0.12",
+          "Xam.Plugin.Geolocator": "4.5.0.6",
+          "Xam.Plugin.SimpleAudioPlayer": "1.4.0",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Xamarin.Forms": "4.3.0.908675",
+          "Xamarin.Forms.Maps": "4.3.0.908675"
         },
         "runtime": {
           "StrideApp.dll": {}
@@ -23,11 +27,42 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "Plugin.Permissions/3.0.0.12": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {
             "assemblyVersion": "4.1.4.0",
             "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "Xam.Plugin.Geolocator/4.5.0.6": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Geolocator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xam.Plugin.SimpleAudioPlayer/1.4.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.SimpleAudioPlayer.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.0/Plugin.SimpleAudioPlayer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -57,6 +92,17 @@
             "fileVersion": "4.3.0.336"
           }
         }
+      },
+      "Xamarin.Forms.Maps/4.3.0.908675": {
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.908675"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.3.0.336"
+          }
+        }
       }
     }
   },
@@ -80,12 +126,33 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "Plugin.Permissions/3.0.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "path": "plugin.permissions/3.0.0.12",
+      "hashPath": "plugin.permissions.3.0.0.12.nupkg.sha512"
+    },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "Xam.Plugin.Geolocator/4.5.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ro7peBDxsDXPc7J7yLx0ekAcXIfVTAXj/rXiBKiTgZ4Lm7KZJIU8PXOCcI4JztzT3MQrL8Rmka48il/ix0pwoA==",
+      "path": "xam.plugin.geolocator/4.5.0.6",
+      "hashPath": "xam.plugin.geolocator.4.5.0.6.nupkg.sha512"
+    },
+    "Xam.Plugin.SimpleAudioPlayer/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QzfFZhmebaNBdQ0o2XcMLKKUsdxYpIZd50qOUuuls1zIj2ixudS3QoYOp9v27Fwa0CL1e9jEeAMgyBH7Qpimlw==",
+      "path": "xam.plugin.simpleaudioplayer/1.4.0",
+      "hashPath": "xam.plugin.simpleaudioplayer.1.4.0.nupkg.sha512"
     },
     "Xamarin.Essentials/1.3.1": {
       "type": "package",
@@ -100,6 +167,13 @@
       "sha512": "sha512-kXrbXKJvXYF4cKjs1Jsb+pQFEnFGl0AONYSeABjgOJqN/o5Y4zC0XXQ68xiUI81PKQTuRB5F3oDom2t5ccJDZw==",
       "path": "xamarin.forms/4.3.0.908675",
       "hashPath": "xamarin.forms.4.3.0.908675.nupkg.sha512"
+    },
+    "Xamarin.Forms.Maps/4.3.0.908675": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+A67X2ijiICMRLqGADjj8ngAEUYpq+KihBVA1+5Y0kFJg++rs8QrEEw8Qz/jHwIH3a0hCr+5qiDNkEPG+5xX7Q==",
+      "path": "xamarin.forms.maps/4.3.0.908675",
+      "hashPath": "xamarin.forms.maps.4.3.0.908675.nupkg.sha512"
     }
   }
 }

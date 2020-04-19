@@ -26,6 +26,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -33,6 +42,29 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "Xam.Plugin.Geolocator/4.5.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Geolocator.dll": {}
+        }
+      },
+      "Xam.Plugin.SimpleAudioPlayer/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Plugin.SimpleAudioPlayer.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.SimpleAudioPlayer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.SimpleAudioPlayer.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.SimpleAudioPlayer.dll": {}
         }
       },
       "Xamarin.Essentials/1.3.1": {
@@ -62,6 +94,18 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/4.3.0.908675": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.908675"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
         }
       }
     }
@@ -211,6 +255,29 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Plugin.Permissions/3.0.0.12": {
+      "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "type": "package",
+      "path": "plugin.permissions/3.0.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid71/Plugin.Permissions.dll",
+        "lib/monoandroid71/Plugin.Permissions.xml",
+        "lib/netstandard1.0/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.xml",
+        "lib/netstandard2.0/Plugin.Permissions.dll",
+        "lib/netstandard2.0/Plugin.Permissions.xml",
+        "lib/uap10.0.10240/Plugin.Permissions.dll",
+        "lib/uap10.0.10240/Plugin.Permissions.pri",
+        "lib/uap10.0.10240/Plugin.Permissions.xml",
+        "lib/xamarinios10/Plugin.Permissions.dll",
+        "lib/xamarinios10/Plugin.Permissions.xml",
+        "plugin.permissions.3.0.0.12.nupkg.sha512",
+        "plugin.permissions.nuspec",
+        "readme.txt"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -256,6 +323,76 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xam.Plugin.Geolocator/4.5.0.6": {
+      "sha512": "Ro7peBDxsDXPc7J7yLx0ekAcXIfVTAXj/rXiBKiTgZ4Lm7KZJIU8PXOCcI4JztzT3MQrL8Rmka48il/ix0pwoA==",
+      "type": "package",
+      "path": "xam.plugin.geolocator/4.5.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid71/Plugin.Geolocator.dll",
+        "lib/monoandroid71/Plugin.Geolocator.xml",
+        "lib/netstandard1.0/Plugin.Geolocator.dll",
+        "lib/netstandard1.0/Plugin.Geolocator.xml",
+        "lib/netstandard2.0/Plugin.Geolocator.dll",
+        "lib/netstandard2.0/Plugin.Geolocator.xml",
+        "lib/uap10.0.10240/Plugin.Geolocator.dll",
+        "lib/uap10.0.10240/Plugin.Geolocator.pri",
+        "lib/uap10.0.10240/Plugin.Geolocator.xml",
+        "lib/xamarinios10/Plugin.Geolocator.dll",
+        "lib/xamarinios10/Plugin.Geolocator.xml",
+        "lib/xamarinmac20/Plugin.Geolocator.dll",
+        "lib/xamarinmac20/Plugin.Geolocator.xml",
+        "lib/xamarintvos10/Plugin.Geolocator.dll",
+        "lib/xamarintvos10/Plugin.Geolocator.xml",
+        "readme.txt",
+        "xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
+        "xam.plugin.geolocator.nuspec"
+      ]
+    },
+    "Xam.Plugin.SimpleAudioPlayer/1.4.0": {
+      "sha512": "QzfFZhmebaNBdQ0o2XcMLKKUsdxYpIZd50qOUuuls1zIj2ixudS3QoYOp9v27Fwa0CL1e9jEeAMgyBH7Qpimlw==",
+      "type": "package",
+      "path": "xam.plugin.simpleaudioplayer/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.SimpleAudioPlayer.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.SimpleAudioPlayer.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.SimpleAudioPlayer.XML",
+        "lib/MonoAndroid10/Plugin.SimpleAudioPlayer.dll",
+        "lib/MonoAndroid10/Plugin.SimpleAudioPlayer.pdb",
+        "lib/UAP10/Plugin.SimpleAudioPlayer.Abstractions.dll",
+        "lib/UAP10/Plugin.SimpleAudioPlayer.Abstractions.pdb",
+        "lib/UAP10/Plugin.SimpleAudioPlayer.dll",
+        "lib/UAP10/Plugin.SimpleAudioPlayer.pdb",
+        "lib/UAP10/Plugin.SimpleAudioPlayer.pri",
+        "lib/UAP10/Plugin.SimpleAudioPlayer.xml",
+        "lib/Xamarin.Mac20/Plugin.SimpleAudioPlayer.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.SimpleAudioPlayer.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.SimpleAudioPlayer.dll",
+        "lib/Xamarin.Mac20/Plugin.SimpleAudioPlayer.xml",
+        "lib/Xamarin.iOS10/Plugin.SimpleAudioPlayer.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.SimpleAudioPlayer.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.SimpleAudioPlayer.XML",
+        "lib/Xamarin.iOS10/Plugin.SimpleAudioPlayer.dll",
+        "lib/Xamarintvos/Plugin.SimpleAudioPlayer.Abstractions.dll",
+        "lib/Xamarintvos/Plugin.SimpleAudioPlayer.Abstractions.pdb",
+        "lib/Xamarintvos/Plugin.SimpleAudioPlayer.dll",
+        "lib/Xamarintvos/Plugin.SimpleAudioPlayer.xml",
+        "lib/net45/Plugin.SimpleAudioPlayer.Abstractions.dll",
+        "lib/net45/Plugin.SimpleAudioPlayer.Abstractions.pdb",
+        "lib/net45/Plugin.SimpleAudioPlayer.dll",
+        "lib/net45/Plugin.SimpleAudioPlayer.pdb",
+        "lib/netstandard1.0/Plugin.SimpleAudioPlayer.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.SimpleAudioPlayer.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.SimpleAudioPlayer.deps.json",
+        "lib/netstandard1.0/Plugin.SimpleAudioPlayer.dll",
+        "lib/netstandard1.0/Plugin.SimpleAudioPlayer.pdb",
+        "xam.plugin.simpleaudioplayer.1.4.0.nupkg.sha512",
+        "xam.plugin.simpleaudioplayer.nuspec"
       ]
     },
     "Xamarin.Essentials/1.3.1": {
@@ -557,33 +694,70 @@
         "xamarin.forms.4.3.0.908675.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Xamarin.Forms.Maps/4.3.0.908675": {
+      "sha512": "+A67X2ijiICMRLqGADjj8ngAEUYpq+KihBVA1+5Y0kFJg++rs8QrEEw8Qz/jHwIH3a0hCr+5qiDNkEPG+5xX7Q==",
+      "type": "package",
+      "path": "xamarin.forms.maps/4.3.0.908675",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.4.3.0.908675.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "Plugin.Permissions >= 3.0.0.12",
+      "Xam.Plugin.Geolocator >= 4.5.0.6",
+      "Xam.Plugin.SimpleAudioPlayer >= 1.4.0",
       "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.3.0.908675"
+      "Xamarin.Forms >= 4.3.0.908675",
+      "Xamarin.Forms.Maps >= 4.3.0.908675"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\beanb\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Martin Pugh\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+      "projectUniqueName": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
       "projectName": "StrideApp",
-      "projectPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
-      "packagesPath": "C:\\Users\\beanb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\beanb\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
+      "projectPath": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+      "packagesPath": "C:\\Users\\Martin Pugh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\beanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Martin Pugh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -614,11 +788,27 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
+          "Plugin.Permissions": {
+            "target": "Package",
+            "version": "[3.0.0.12, )"
+          },
+          "Xam.Plugin.Geolocator": {
+            "target": "Package",
+            "version": "[4.5.0.6, )"
+          },
+          "Xam.Plugin.SimpleAudioPlayer": {
+            "target": "Package",
+            "version": "[1.4.0, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.3.1, )"
           },
           "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[4.3.0.908675, )"
+          },
+          "Xamarin.Forms.Maps": {
             "target": "Package",
             "version": "[4.3.0.908675, )"
           }

@@ -1,0 +1,5 @@
+﻿CityID,CityName,CityImage
+1,Liverpool,Liverpool.jpg
+2,London,London.jpg
+3,Madrid,Madrid.jpg
+4,New York,NewYork.jpg

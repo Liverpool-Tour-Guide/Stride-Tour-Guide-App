@@ -3,14 +3,86 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              mc:Ignorable="d"
              x:Class="StrideApp.Views.MapPage"
              Title="Map">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Here will be the map"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+        <maps:Map x:Name="map"
+               IsShowingUser="True"
+               MoveToLastRegionOnLayoutChange="False">
+            <x:Arguments>
+                <maps:MapSpan>
+                    <x:Arguments>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>53.401424</x:Double>
+                                <x:Double>-2.993100</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                        <x:Double>0.01</x:Double>
+                        <x:Double>0.01</x:Double>
+                    </x:Arguments>
+                </maps:MapSpan>
+            </x:Arguments>
+            <maps:Map.Pins>
+                <maps:Pin Label="International SlaveryMuseum"
+                       Address="Historical and contemporary slavery"
+                       Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>53.401424</x:Double>
+                                <x:Double>-2.993100</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+            <maps:Pin Label="Merseyside Maritime Museum"
+                       Address="Discover Liverpool's seafaring past"
+                       Type="Place">
+                <maps:Pin.Position>
+                    <maps:Position>
+                        <x:Arguments>
+                            <x:Double>53.401440</x:Double>
+                            <x:Double>-2.992898</x:Double>
+                        </x:Arguments>
+                    </maps:Position>
+                </maps:Pin.Position>
+            </maps:Pin>
+            <maps:Pin Label="Royal Albert Dock"
+                       Type="Place">
+                <maps:Pin.Position>
+                    <maps:Position>
+                        <x:Arguments>
+                            <x:Double>53.401700</x:Double>
+                            <x:Double>-2.991859</x:Double>
+                        </x:Arguments>
+                    </maps:Position>
+                </maps:Pin.Position>
+            </maps:Pin>
+            <maps:Pin Label="Tate Liverpool"
+                       Type="Place">
+                <maps:Pin.Position>
+                    <maps:Position>
+                        <x:Arguments>
+                            <x:Double>53.400942</x:Double>
+                            <x:Double>-2.994153</x:Double>
+                        </x:Arguments>
+                    </maps:Position>
+                </maps:Pin.Position>
+            </maps:Pin>
+            <maps:Pin Label="The Beatles Story"
+                       Type="Place">
+                <maps:Pin.Position>
+                    <maps:Position>
+                        <x:Arguments>
+                            <x:Double>53.399325</x:Double>
+                            <x:Double>-2.992047</x:Double>
+                        </x:Arguments>
+                    </maps:Position>
+                </maps:Pin.Position>
+            </maps:Pin>
+        </maps:Map.Pins>
+        </maps:Map>
 </ContentPage>
