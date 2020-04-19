@@ -1345,39 +1345,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Martin Pugh\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/ali/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+      "projectUniqueName": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp.iOS/StrideApp.iOS.csproj",
       "projectName": "StrideApp.iOS",
-      "projectPath": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\Martin Pugh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
+      "projectPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp.iOS/StrideApp.iOS.csproj",
+      "packagesPath": "/Users/ali/.nuget/packages/",
+      "outputPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Martin Pugh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/ali/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
-              "projectPath": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
+            "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/StrideApp.csproj": {
+              "projectPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/StrideApp.csproj"
             }
           }
         }

@@ -741,31 +741,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Martin Pugh\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/ali/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+      "projectUniqueName": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/StrideApp.csproj",
       "projectName": "StrideApp",
-      "projectPath": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
-      "packagesPath": "C:\\Users\\Martin Pugh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Martin Pugh\\Documents\\Stride-Tour-Guide-App\\StrideApp\\StrideApp\\StrideApp\\obj\\",
+      "projectPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/StrideApp.csproj",
+      "packagesPath": "/Users/ali/.nuget/packages/",
+      "outputPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Martin Pugh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/ali/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -823,7 +816,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
       }
     }
   }

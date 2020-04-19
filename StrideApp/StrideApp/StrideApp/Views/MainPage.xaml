@@ -5,15 +5,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="StrideApp.MainPage"
-             Title="Choose Your city">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-        <!-- Creating a button and giving it a function to call when it is clicked-->
-        <Button Text="Go to tour selection" Clicked="OnNoteAddedClicked"></Button>
-    </StackLayout>
-
+             Title="Where would you like a tour?">
+    <ScrollView>
+        <StackLayout BindableLayout.ItemsSource="{Binding Cities}" Spacing="0">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Grid HeightRequest="250" Margin="0,0">
+                        <Grid.GestureRecognizers><TapGestureRecognizer Tapped="CitySelected_Tapped" ></TapGestureRecognizer></Grid.GestureRecognizers>
+                        <Image Source="{Binding ImageSource}" Aspect="AspectFill"/>
+                        <Label Text="{Binding UpperCaseName}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="60"/>
+                    </Grid>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
