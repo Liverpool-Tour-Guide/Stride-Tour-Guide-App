@@ -8,7 +8,54 @@
              Title="Choose a Tour">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+
+
+
+            <!--  <ListView x:Name="tourListView">
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding .}" VerticalOptions="Center" HorizontalOptions="Center" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView> -->
+
+            <ListView  x:Name="GroupedView"
+            GroupDisplayBinding="{Binding Title}"
+            RowHeight="75"
+            GroupShortNameBinding="{Binding ShortName}"
+            IsGroupingEnabled="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Text="{Binding Name}"
+                            Detail="{Binding Description}"
+                            ImageSource="{Binding Icon}"
+                            Height="75"
+                            TextColor="#005569"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="5,5,5,5" BackgroundColor="#E2F5F9">
+                                <Button Image="{Binding StateIcon}"
+                      BackgroundColor="Transparent"
+                      BorderColor="Transparent"
+                      BorderWidth="0"
+                      Clicked="HeaderTapped" 
+                      CommandParameter="{Binding .}"/>
+                                <Label Text="{Binding TitleWithItemCount}" 
+                     TextColor="#005569"
+                     FontSize="15"
+                     VerticalOptions="Center"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+            </ListView>
+
+
+            <Label Text="Choose the tour on this page"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button Text="Go to tour " Clicked="OnNoteAddedClicked"></Button>
