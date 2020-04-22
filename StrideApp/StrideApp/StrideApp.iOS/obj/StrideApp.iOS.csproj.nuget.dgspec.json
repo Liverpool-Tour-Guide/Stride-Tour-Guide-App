@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp.iOS/StrideApp.iOS.csproj": {}
+    "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {}
   },
   "projects": {
-    "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp.iOS/StrideApp.iOS.csproj": {
+    "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp.iOS/StrideApp.iOS.csproj",
+        "projectUniqueName": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
         "projectName": "StrideApp.iOS",
-        "projectPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp.iOS/StrideApp.iOS.csproj",
-        "packagesPath": "/Users/ali/.nuget/packages/",
-        "outputPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp.iOS/obj/",
+        "projectPath": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp.iOS\\StrideApp.iOS.csproj",
+        "packagesPath": "C:\\Users\\Jakob Ropers\\.nuget\\packages\\",
+        "outputPath": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/ali/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Jakob Ropers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/StrideApp.csproj": {
-                "projectPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/StrideApp.csproj"
+              "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
+                "projectPath": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj"
               }
             }
           }
@@ -71,22 +77,29 @@
         }
       }
     },
-    "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/StrideApp.csproj": {
+    "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/StrideApp.csproj",
+        "projectUniqueName": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
         "projectName": "StrideApp",
-        "projectPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/StrideApp.csproj",
-        "packagesPath": "/Users/ali/.nuget/packages/",
-        "outputPath": "/Users/ali/Desktop/Stride-Tour-Guide-App/StrideApp/StrideApp/StrideApp/obj/",
+        "projectPath": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+        "packagesPath": "C:\\Users\\Jakob Ropers\\.nuget\\packages\\",
+        "outputPath": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/ali/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Jakob Ropers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,6 +116,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.Azure.WebJobs": {
+              "target": "Package",
+              "version": "[3.0.16, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -144,7 +161,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

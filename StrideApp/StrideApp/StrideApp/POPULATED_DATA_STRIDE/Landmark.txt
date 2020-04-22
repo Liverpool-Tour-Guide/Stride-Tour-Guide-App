@@ -1,6 +1,6 @@
 ﻿LandmarkID,CityID,TourID,LandmarkName,LandmarkDisabilityAccess,LandmarkDescription,LandmarkAudio,LandmarkGPSLocation,LandmarkTranscript
-1,1,"1,3",International SlaveryMuseum,Y,Hear the untold stories of enslaved people and learn about historical and contemporary slavery.,InternationalSlaveryMuseum.mp3,"53.401424, -2.993100",InternationalSlaveryMuseum.txt
-2,1,"1,3",Merseyside Maritime Museum,Y,Discover Liverpool's seafaring past and find out about a life at sea.,MMM.mp3,"53.401440, -2.992898",MMM.txt
-3,1,"2,3",Royal Albert Dock,Y,"The Royal Albert Dock is a complex of dock buildings and warehouses in Liverpool, England. Designed by Jesse Hartley and Philip Hardwick, it was opened in 1846, and was the first structure in Britain to be built from cast iron, brick and stone, with no structural wood.",RoyalAlbert.mp3,"53.401700, -2.991859",AlbertDock.txt
-4,1,"1,3",Tate Liverpool,Y,A Museum of Modern Art.,Tate.mp3,"53.400942, -2.994153",Tate.txt
-5,1,"2,3",The Beatles Story,N,The Beatles Story is a museum in Liverpool about the Beatles and their history. It is located on the historical Royal Albert Dock.,BeatlesStory.mp3,"53.399325, -2.992047",BeatlesStory.txt
+1,1,"1,3,4",International SlaveryMuseum,Y,Hear the untold stories of enslaved people and learn about historical and contemporary slavery.,InternationalSlaveryMuseum.mp3,"53.401424, -2.993100",InternationalSlaveryMuseum.txt
+2,1,"1,3,4",Merseyside Maritime Museum,Y,Discover Liverpool's seafaring past and find out about a life at sea.,MMM.mp3,"53.401440, -2.992898",MMM.txt
+3,1,"2,3,4",Royal Albert Dock,Y,"The Royal Albert Dock is a complex of dock buildings and warehouses in Liverpool, England. Designed by Jesse Hartley and Philip Hardwick, it was opened in 1846, and was the first structure in Britain to be built from cast iron, brick and stone, with no structural wood.",RoyalAlbert.mp3,"53.401700, -2.991859",AlbertDock.txt
+4,1,"1,3,4",Tate Liverpool,Y,A Museum of Modern Art.,Tate.mp3,"53.400942, -2.994153",Tate.txt
+5,1,"2,3,4",The Beatles Story,N,The Beatles Story is a museum in Liverpool about the Beatles and their history. It is located on the historical Royal Albert Dock.,BeatlesStory.mp3,"53.399325, -2.992047",BeatlesStory.txt

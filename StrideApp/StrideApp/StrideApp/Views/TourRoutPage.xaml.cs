@@ -171,7 +171,7 @@ namespace StrideApp.Views
                 return true;
             });
 
-            int counter = getWaypoints(1, 3);
+            int counter = getWaypoints(1, 4);
 
             for (int i = 0; i < counter; i++)
             {
