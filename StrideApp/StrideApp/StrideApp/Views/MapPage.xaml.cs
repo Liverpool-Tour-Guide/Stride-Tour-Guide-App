@@ -13,9 +13,10 @@ namespace StrideApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MapPage : ContentPage
     {
-        public MapPage()
+        public MapPage(int cityID, int tourID)
         {
             InitializeComponent();
+            //USE IDs and CSV
 
         }
     }

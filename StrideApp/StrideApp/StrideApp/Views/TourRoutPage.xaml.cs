@@ -139,7 +139,6 @@ namespace StrideApp.Views
                         currentAudioPlayer = tempAudioPlayer;
                         currentAudioPlayer.startAudio(audioName);
                         currentActiveButton = index;
-                        Waypoints[index].changeVisitStatus();
 
                         toggle = -1;
                     }
@@ -153,7 +152,6 @@ namespace StrideApp.Views
                     currentAudioPlayer = tempAudioPlayer;
                     currentAudioPlayer.startAudio(audioName);
                     currentActiveButton = index;
-                    Waypoints[index].changeVisitStatus();
 
                     toggle = -1;
                 }
@@ -200,7 +198,7 @@ namespace StrideApp.Views
         }
 
 
-        public TourRoutPage()
+        public TourRoutPage(int cityID, int tourID)
         {
   
             InitializeComponent();
@@ -242,7 +240,7 @@ namespace StrideApp.Views
                 return true;
             });
 
-            int counter = getWaypoints(1, 4);
+            int counter = getWaypoints(cityID, tourID);
 
             for (int i = 0; i < counter; i++)
             {

@@ -10,7 +10,7 @@
             Title="Tour Name">
     
     <!--Pages can be added as references or inline-->
-    <local:MapPage  Title="Map"  />
-    <local:TourRoutPage Title="Route" />
+    <!-- <local:MapPage  Title="Map"  />
+    <local:TourRoutPage Title="Route" />-->
     
 </TabbedPage>

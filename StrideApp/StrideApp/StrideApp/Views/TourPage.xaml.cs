@@ -17,12 +17,14 @@ namespace StrideApp
 
         private ObservableCollection<TourGroup> _allGroups;
         private ObservableCollection<TourGroup> _expandedGroups;
+        int selectedCityID;
 
-        public TourPage()
+        public TourPage(int cityID)
         {
             InitializeComponent();
             _allGroups = TourGroup.All;
             UpdateListContent();
+            selectedCityID = cityID;
 
             /*tourListView.ItemsSource = new List<string>()
             {
@@ -64,7 +66,7 @@ namespace StrideApp
 
         async void OnNoteAddedClicked(object sender, EventArgs e)
         { //This is how you navigate between pages
-            await Navigation.PushAsync(new TourTabbedPage
+            await Navigation.PushAsync(new TourTabbedPage(selectedCityID,4) //Passing cityID and tourID
             {
             });
         }

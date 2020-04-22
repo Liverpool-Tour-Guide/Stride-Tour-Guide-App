@@ -64,7 +64,7 @@ namespace StrideApp
 
         async void OnNoteAddedClicked(object sender, EventArgs e)
         {//This is how you navigate between pages
-            await Navigation.PushAsync(new TourPage
+            await Navigation.PushAsync(new TourPage(1)
             {
             });
         }
@@ -74,9 +74,10 @@ namespace StrideApp
             var currentCity = (sender as BindableObject).BindingContext as City;
             Debug.WriteLine($"{currentCity.Name} has been selected");
 
-            await Navigation.PushAsync(new TourPage
+            await Navigation.PushAsync(new TourPage(currentCity.Id)
             {
                 // City = currentCity this is a city object (see models folder)
+                //
             });
 
         }

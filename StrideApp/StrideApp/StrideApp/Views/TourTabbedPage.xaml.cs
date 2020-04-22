@@ -14,8 +14,10 @@ namespace StrideApp.Views
     public partial class TourTabbedPage : TabbedPage
     {
         
-        public TourTabbedPage()
+        public TourTabbedPage(int cityID, int tourID)
         {
+            Children.Add(new MapPage(cityID, tourID));
+            Children.Add(new TourRoutPage(cityID, tourID));
             InitializeComponent();
             
         }
