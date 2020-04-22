@@ -6,8 +6,16 @@ using System.Text;
 
 namespace StrideApp
 {
-    public class Waypoint
-    {   
+    public class Waypoint : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void NotifyPropertyChanged(string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+
         public string StorageIndex { get; set; }
         public string LandmarkID { get; set; }
         public string Name { get; set; }
@@ -15,6 +23,8 @@ namespace StrideApp
         public string AudioURL { get; set; }
         public Position LandmarkGPSLocation { get; set; }
         public bool Visited { get; set; }
+
+
         public string MarkColor {
             get
             {
@@ -28,6 +38,7 @@ namespace StrideApp
                 }
             }
         }
+
         public string TextColor {
             get
             {
@@ -41,6 +52,29 @@ namespace StrideApp
                 }
             }
         }
+
+
+        private string buttonsource;
+
+        public string ButtonSource
+        {
+            get
+            {
+                return buttonsource;
+            }
+            set
+            {
+                if(buttonsource != value)
+                {
+                    buttonsource = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
+
+       public int Toggle { get; set; }
+
 
         public override string ToString()
         {

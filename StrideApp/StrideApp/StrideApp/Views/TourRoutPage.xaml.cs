@@ -27,7 +27,7 @@ namespace StrideApp.Views
 
         AudioPlayer currentAudioPlayer;
         int toggle;
-        ImageButton currentActiveButton;
+        int currentActiveButton;
 
         public int getWaypoints(int cityID, int tourID) 
         {
@@ -80,22 +80,15 @@ namespace StrideApp.Views
                 currentAudioPlayer = tempAudioPlayer;
                 currentAudioPlayer.startAudio(audioName);
 
-                ImageButton current_button = (ImageButton)FindViewByID(ID);
+                Waypoints[ID].ButtonSource = "pause_circle.png";
+                Waypoints[ID].Toggle = -1;
+                currentActiveButton = ID;
 
-                current_button.Source = "pause_circle.png";
-                current_button.WidthRequest = 64;
-                current_button.HeightRequest = 64;
-                current_button.BackgroundColor = Color.Transparent;
-                current_button.Pressed += OnPauseButtonClicked;
-
-                currentActiveButton = current_button;
             } else
             {
-                currentActiveButton.Source = "play_circle.png";
-                currentActiveButton.WidthRequest = 64;
-                currentActiveButton.HeightRequest = 64;
-                currentActiveButton.BackgroundColor = Color.Transparent;
-                currentActiveButton.Pressed += OnPlayButtonClicked;
+                int index = currentActiveButton;
+                Waypoints[index].ButtonSource = "play_circle.png";
+                Waypoints[index].Toggle = 1;
 
                 AudioPlayer tempAudioPlayer = new AudioPlayer
                 {
@@ -105,15 +98,9 @@ namespace StrideApp.Views
                 currentAudioPlayer = tempAudioPlayer;
                 currentAudioPlayer.startAudio(audioName);
 
-                ImageButton current_button = (ImageButton)FindByName(Waypoints[ID].Name);
-
-                current_button.Source = "pause_circle.png";
-                current_button.WidthRequest = 64;
-                current_button.HeightRequest = 64;
-                current_button.BackgroundColor = Color.Transparent;
-                current_button.Pressed += OnPauseButtonClicked;
-
-                currentActiveButton = current_button;
+                Waypoints[ID].ButtonSource = "pause_circle.png";
+                Waypoints[ID].Toggle = -1;
+                currentActiveButton = ID;
             }
         }
 
@@ -123,80 +110,86 @@ namespace StrideApp.Views
             int index = Int32.Parse(button.ClassId);
             string audioName = landmark_data[index, 4];
 
-            if (currentAudioPlayer != null)
+            if (Waypoints[index].Toggle == 1)
             {
-                if (currentAudioPlayer.audioName == audioName)
+
+                if (currentAudioPlayer != null)
                 {
-                    if (!currentAudioPlayer.audioPlaying)
+                    if (currentAudioPlayer.audioName == audioName)
                     {
-                        currentAudioPlayer.playAudio();
+                        if (!currentAudioPlayer.audioPlaying)
+                        {
+                            currentAudioPlayer.playAudio();
+                            toggle = -1;
+                        }
+                    }
+                    else
+                    {
+                        int temp_index = currentActiveButton;
+                        Waypoints[temp_index].ButtonSource = "play_circle.png";
+                        button.WidthRequest = 64;
+                        button.HeightRequest = 64;
+                        button.BackgroundColor = Color.Transparent;
+                        Waypoints[temp_index].Toggle = 1;
+
+                        AudioPlayer tempAudioPlayer = new AudioPlayer
+                        {
+                            audioName = audioName
+                        };
+                        currentAudioPlayer = tempAudioPlayer;
+                        currentAudioPlayer.startAudio(audioName);
+                        currentActiveButton = index;
+                        Waypoints[index].changeVisitStatus();
+
                         toggle = -1;
                     }
-                } else
+                }
+                else
                 {
-                    currentActiveButton.Source = "play_circle.png";
-                    button.WidthRequest = 64;
-                    button.HeightRequest = 64;
-                    button.BackgroundColor = Color.Transparent;
-                    currentActiveButton.Pressed += OnPlayButtonClicked;
-
                     AudioPlayer tempAudioPlayer = new AudioPlayer
                     {
                         audioName = audioName
                     };
                     currentAudioPlayer = tempAudioPlayer;
                     currentAudioPlayer.startAudio(audioName);
-                    currentActiveButton = button;
+                    currentActiveButton = index;
                     Waypoints[index].changeVisitStatus();
 
                     toggle = -1;
                 }
             } else
             {
-                AudioPlayer tempAudioPlayer = new AudioPlayer
+                if (currentAudioPlayer.audioPlaying)
                 {
-                    audioName = audioName
-                };
-                currentAudioPlayer = tempAudioPlayer;
-                currentAudioPlayer.startAudio(audioName);
-                currentActiveButton = button;
-                Waypoints[index].changeVisitStatus();
-
-                toggle = -1;
+                    currentAudioPlayer.pauseAudio();
+                    toggle = 1;
+                }
             }
 
-        }
-
-        async void OnPauseButtonClicked(object sender, EventArgs e)
-        {//This is how you navigate between pages
-            if (currentAudioPlayer.audioPlaying)
-            {
-                currentAudioPlayer.pauseAudio();
-                toggle = 1;
-            }
         }
 
         async void ToggleClickedHandler(object sender, EventArgs e)
         {
             var button = (ImageButton)sender;
+            int index = Int32.Parse(button.ClassId);
 
             if (toggle == 1)
             {
                 //Play Displayed
-                button.Source = "play_circle.png";
+                Waypoints[index].ButtonSource = "play_circle.png";
                 button.WidthRequest = 64;
                 button.HeightRequest = 64;
                 button.BackgroundColor = Color.Transparent;
-                button.Pressed += OnPlayButtonClicked;
+                Waypoints[index].Toggle = 1;
 
             } else if (toggle == -1)
             {
                 //Pause Displayed
-                button.Source = "pause_circle.png";
+                Waypoints[index].ButtonSource = "pause_circle.png";
                 button.WidthRequest = 64;
                 button.HeightRequest = 64;
                 button.BackgroundColor = Color.Transparent;
-                button.Pressed += OnPauseButtonClicked;
+                Waypoints[index].Toggle = -1;
             }
         }
 
@@ -221,7 +214,7 @@ namespace StrideApp.Views
 
                 Console.WriteLine("JAKOB MESSAGES: Checking location...");
 
-                Position current_position = locator.position;
+                Position current_position = position;
                 double user_lat = current_position.Latitude;
                 double user_long = current_position.Longitude;
 
@@ -231,6 +224,8 @@ namespace StrideApp.Views
                 {
                     double waypoint_lat = Waypoints[i].LandmarkGPSLocation.Latitude;
                     double waypoint_long = Waypoints[i].LandmarkGPSLocation.Longitude;
+
+                    Console.WriteLine($"{Waypoints[i].Name} has latitude of {waypoint_lat} and longitude of {waypoint_long}");
 
                     double lat_upper = waypoint_lat + 0.0001;
                     double lat_lower = waypoint_lat - 0.0001;
@@ -253,10 +248,20 @@ namespace StrideApp.Views
             {
                 double latitude, longitude;
 
+                Console.WriteLine($"JAKOB MESSAGE: LandmarkData Reading = {landmark_data[i,5]}");
+
                 string[] position_values = landmark_data[i, 5].Split(',');
+                char[] charsToTrim = { '"' };
+                position_values[0] = position_values[0].Trim(charsToTrim);
+                position_values[1] = position_values[1].Trim(charsToTrim);
+
+                Console.WriteLine($"JAKOB MESSAGE: Split array = {position_values[0]}, {position_values[1]}");
 
                 Double.TryParse(position_values[0],out latitude);
                 Double.TryParse(position_values[1], out longitude);
+
+                Console.WriteLine($"JAKOB MESSAGE: Calculated latitude = {latitude}, calculated longitude = {longitude}");
+
                 Position position = new Position(latitude,longitude);
 
 
@@ -268,6 +273,8 @@ namespace StrideApp.Views
                     Description = landmark_data[i, 3],
                     AudioURL = landmark_data[i, 4],
                     LandmarkGPSLocation = position,
+                    ButtonSource = "play_circle.png",
+                    Toggle = 1,
                     Visited = false
                 });
             }

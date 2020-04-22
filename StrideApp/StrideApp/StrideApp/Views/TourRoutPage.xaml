@@ -56,7 +56,7 @@
                                    Grid.ColumnSpan="3"/>
                             <ImageButton x:Name="btnPlay"
                                     ClassId="{Binding StorageIndex}"
-                                    Source="play_circle.png"
+                                    Source="{Binding ButtonSource}"
                                     Grid.Column="4"
                                     Grid.Row="2"
                                     Pressed="OnPlayButtonClicked"
