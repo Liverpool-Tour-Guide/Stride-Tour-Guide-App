@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Geolocator.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -12,6 +13,7 @@ namespace StrideApp
         public string Name { get; set; }
         public string Description { get; set; }
         public string AudioURL { get; set; }
+        public Position LandmarkGPSLocation { get; set; }
         public bool Visited { get; set; }
         public string MarkColor {
             get

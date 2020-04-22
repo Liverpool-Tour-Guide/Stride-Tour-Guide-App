@@ -67,6 +67,56 @@ namespace StrideApp.Views
         
         }
 
+        public void AudioTrigger(int ID)
+        {
+            string audioName = landmark_data[ID, 4];
+
+            if (currentAudioPlayer == null)
+            {
+                AudioPlayer tempAudioPlayer = new AudioPlayer
+                {
+                    audioName = audioName
+                };
+                currentAudioPlayer = tempAudioPlayer;
+                currentAudioPlayer.startAudio(audioName);
+
+                ImageButton current_button = (ImageButton)FindViewByID(ID);
+
+                current_button.Source = "pause_circle.png";
+                current_button.WidthRequest = 64;
+                current_button.HeightRequest = 64;
+                current_button.BackgroundColor = Color.Transparent;
+                current_button.Pressed += OnPauseButtonClicked;
+
+                currentActiveButton = current_button;
+            } else
+            {
+                currentActiveButton.Source = "play_circle.png";
+                currentActiveButton.WidthRequest = 64;
+                currentActiveButton.HeightRequest = 64;
+                currentActiveButton.BackgroundColor = Color.Transparent;
+                currentActiveButton.Pressed += OnPlayButtonClicked;
+
+                AudioPlayer tempAudioPlayer = new AudioPlayer
+                {
+                    audioName = audioName
+                };
+                currentAudioPlayer.pauseAudio();
+                currentAudioPlayer = tempAudioPlayer;
+                currentAudioPlayer.startAudio(audioName);
+
+                ImageButton current_button = (ImageButton)FindByName(Waypoints[ID].Name);
+
+                current_button.Source = "pause_circle.png";
+                current_button.WidthRequest = 64;
+                current_button.HeightRequest = 64;
+                current_button.BackgroundColor = Color.Transparent;
+                current_button.Pressed += OnPauseButtonClicked;
+
+                currentActiveButton = current_button;
+            }
+        }
+
         async void OnPlayButtonClicked(object sender, EventArgs e)
         {//This is how you navigate between pages
             var button = (ImageButton)sender;
@@ -168,6 +218,32 @@ namespace StrideApp.Views
             Device.StartTimer(TimeSpan.FromSeconds(5), () =>
             {
                 Device.BeginInvokeOnMainThread(() => refreshPosition());
+
+                Console.WriteLine("JAKOB MESSAGES: Checking location...");
+
+                Position current_position = locator.position;
+                double user_lat = current_position.Latitude;
+                double user_long = current_position.Longitude;
+
+                Console.WriteLine($"JAKOB MESSAGES: Location at {user_lat}, {user_long}");
+
+                for (int i = 0; i < Waypoints.Count; i++)
+                {
+                    double waypoint_lat = Waypoints[i].LandmarkGPSLocation.Latitude;
+                    double waypoint_long = Waypoints[i].LandmarkGPSLocation.Longitude;
+
+                    double lat_upper = waypoint_lat + 0.0001;
+                    double lat_lower = waypoint_lat - 0.0001;
+                    double long_upper = waypoint_long + 0.0001;
+                    double long_lower = waypoint_long - 0.0001;
+
+                    if ((!Waypoints[i].Visited) && ((user_lat >= lat_lower) && (user_lat <= lat_upper)) && ((user_long >= long_lower) && (user_long <= long_upper)))
+                    {
+                        Console.WriteLine($"JAKOB MESSAGES: Triggering audio for Landmark {Waypoints[i].Name}");
+                        Waypoints[i].Visited = true;
+                        AudioTrigger(i);
+                    }
+                }
                 return true;
             });
 
@@ -175,6 +251,15 @@ namespace StrideApp.Views
 
             for (int i = 0; i < counter; i++)
             {
+                double latitude, longitude;
+
+                string[] position_values = landmark_data[i, 5].Split(',');
+
+                Double.TryParse(position_values[0],out latitude);
+                Double.TryParse(position_values[1], out longitude);
+                Position position = new Position(latitude,longitude);
+
+
                 Waypoints.Add(new Waypoint
                 {
                     StorageIndex = i.ToString(),
@@ -182,6 +267,7 @@ namespace StrideApp.Views
                     Name = landmark_data[i, 1],
                     Description = landmark_data[i, 3],
                     AudioURL = landmark_data[i, 4],
+                    LandmarkGPSLocation = position,
                     Visited = false
                 });
             }
