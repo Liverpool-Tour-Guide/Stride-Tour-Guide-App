@@ -98,6 +98,7 @@ namespace StrideApp
                 tourIDtoPass = 4;
             }
 
+            tourIDtoPass = 4;
             await Navigation.PushAsync(new TourTabbedPage(selectedCityID, tourIDtoPass)
             {
                 // City = currentCity this is a city object (see models folder)
