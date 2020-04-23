@@ -908,7 +908,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -2701,25 +2701,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jakob Ropers\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Adam Babs\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+      "projectUniqueName": "C:\\Users\\Adam Babs\\Desktop\\StrideApp\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
       "projectName": "StrideApp",
-      "projectPath": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
-      "packagesPath": "C:\\Users\\Jakob Ropers\\.nuget\\packages\\",
-      "outputPath": "C:\\GitProjects\\StrideApp\\StrideApp\\StrideApp\\obj\\",
+      "projectPath": "C:\\Users\\Adam Babs\\Desktop\\StrideApp\\StrideApp\\StrideApp\\StrideApp\\StrideApp.csproj",
+      "packagesPath": "C:\\Users\\Adam Babs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Adam Babs\\Desktop\\StrideApp\\StrideApp\\StrideApp\\StrideApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jakob Ropers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Adam Babs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2789,7 +2787,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -18,6 +18,7 @@ namespace StrideApp
         private ObservableCollection<TourGroup> _allGroups;
         private ObservableCollection<TourGroup> _expandedGroups;
         int selectedCityID;
+       
 
         public TourPage(int cityID)
         {
@@ -69,6 +70,39 @@ namespace StrideApp
             await Navigation.PushAsync(new TourTabbedPage(selectedCityID,4) //Passing cityID and tourID
             {
             });
+        }
+
+
+        async void TourSelected_Tapped(System.Object sender, System.EventArgs e)
+        {
+            var currentTour = (sender as BindableObject).BindingContext as TourGroup;
+            //Debug.WriteLine($"{currentTour.Name} has been selected");
+            int tourIDtoPass = 0;
+
+            if (currentTour.ShortName == "C" ) {
+                tourIDtoPass = 1;
+            }
+
+            else if (currentTour.ShortName == "F")
+            {
+                tourIDtoPass = 2;
+            }
+
+            else if (currentTour.ShortName == "V")
+            {
+                tourIDtoPass = 3;
+            }
+
+            else if (currentTour.ShortName == "D")
+            {
+                tourIDtoPass = 4;
+            }
+
+            await Navigation.PushAsync(new TourTabbedPage(selectedCityID, tourIDtoPass)
+            {
+                // City = currentCity this is a city object (see models folder)
+            });
+
         }
     }
 }

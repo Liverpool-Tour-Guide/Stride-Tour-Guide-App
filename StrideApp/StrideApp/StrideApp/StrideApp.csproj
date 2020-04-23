@@ -23,6 +23,7 @@
     <None Remove="POPULATED_DATA_STRIDE\InternationalSlaveryMuseum.txt" />
     <None Remove="POPULATED_DATA_STRIDE\Landmark.txt" />
     <None Remove="POPULATED_DATA_STRIDE\Liverpool.jpg" />
+    <None Remove="POPULATED_DATA_STRIDE\London - Copy.jpg" />
     <None Remove="POPULATED_DATA_STRIDE\London.jpg" />
     <None Remove="POPULATED_DATA_STRIDE\Madrid.jpg" />
     <None Remove="POPULATED_DATA_STRIDE\MMM.mp3" />
@@ -33,6 +34,8 @@
     <None Remove="POPULATED_DATA_STRIDE\Tate.mp3" />
     <None Remove="POPULATED_DATA_STRIDE\Tate.txt" />
     <None Remove="POPULATED_DATA_STRIDE\Tour.txt" />
+    <None Remove="Views\collapsed_blue.png" />
+    <None Remove="Views\expanded_blue.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -72,6 +75,8 @@
     <EmbeddedResource Include="POPULATED_DATA_STRIDE\Tate.mp3" />
     <EmbeddedResource Include="POPULATED_DATA_STRIDE\Tate.txt" />
     <EmbeddedResource Include="POPULATED_DATA_STRIDE\Tour.txt" />
+    <EmbeddedResource Include="Views\collapsed_blue.png" />
+    <EmbeddedResource Include="Views\expanded_blue.png" />
   </ItemGroup>
 
   <ItemGroup>
