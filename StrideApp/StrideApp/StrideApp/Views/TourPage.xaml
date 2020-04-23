@@ -13,7 +13,7 @@
             <ListView  x:Name="GroupedView" GroupDisplayBinding="{Binding Title}" RowHeight="75" GroupShortNameBinding="{Binding ShortName}" IsGroupingEnabled="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell Text="{Binding Name}" Detail="{Binding Description}" ImageSource="{Binding Icon}" Height="75" TextColor="#005569"/>
+                        <ImageCell Text="{Binding Name}" Detail="{Binding Description}" ImageSource="{Binding Icon}" Height="125" TextColor="#005569"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
                 

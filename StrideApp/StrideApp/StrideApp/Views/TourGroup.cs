@@ -69,11 +69,12 @@ namespace StrideApp
         static TourGroup()
         {
             ObservableCollection<TourGroup> Groups = new ObservableCollection<TourGroup>{
-                 new TourGroup("Tour The Beatles","C"){
-                     new Tours { Name = "Place 1", Description = "Description", Icon="pasta.png" },
-                     new Tours { Name = "Place 2", Description = "Description", Icon="potato.png" },
-                     new Tours { Name = "Place 3", Description = "Description", Icon="bread.png" },
-                     new Tours { Name = "Place 4", Description = "Description", Icon="rice.png" },
+                 new TourGroup("Albert Dock Tour","C"){
+                     new Tours { Name = "International SlaveryMuseum", Description = "Hear the untold stories of enslaved people and learn about historical and contemporary slavery.", Icon="slavery_museum.jpg" },
+                     new Tours { Name = "Merseyside Maritime Museum", Description = "Discover Liverpool's seafaring past and find out about a life at sea.", Icon="museum.jpg" },
+                     new Tours { Name = "Royal Albert Dock", Description = "The Royal Albert Dock is a complex of dock buildings and warehouses in Liverpool, England. Designed by Jesse Hartley and Philip Hardwick, it was opened in 1846, and was the first structure in Britain to be built from cast iron, brick and stone, with no structural wood.", Icon="albertdock.jpg" },
+                     new Tours { Name = "Tate Liverpool", Description = "A Museum of Modern Art.", Icon="tate.jpg" },
+                     new Tours { Name = "The Beatles Story", Description = "The Beatles Story is a museum in Liverpool about the Beatles and their history. It is located on the historical Royal Albert Dock.", Icon="beatles.jpg" },
                  },
                  new TourGroup("University Tour","F"){
                      new Tours { Name = "Place 1", Description = "Description", Icon="apple.png"},
